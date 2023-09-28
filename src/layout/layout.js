@@ -22,10 +22,10 @@ const Layout = ({ children }) => {
           <path
             d="M16.6 12.542L11.1667 7.10866C10.525 6.46699 9.47499 6.46699 8.83333 7.10866L3.39999 12.542"
             stroke="white"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
             strokeLinecap="round"
-            stroke-linejoin="round"
+            strokeLinejoin="round"
           />
         </svg>
       </Link>
