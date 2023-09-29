@@ -520,6 +520,9 @@ input[type="radio"]::before {
   color: #fff;
   height: 100%;
   font-weight: 500;
+  border: none !important;
+  background-color: inherit !important;
+  border-color: inherit !important;
 }
 
 .es-language-dropdown:hover {
@@ -2033,9 +2036,7 @@ footer .es-phone a:hover {
 }
 
 .es-modal-title {
-  width: 80%;
-  margin: 0;
-  text-align: center;
+  margin: 0px;
   font-weight: 500;
   font-size: 1.125rem;
 }
@@ -3356,4 +3357,20 @@ footer .es-phone a:hover {
 
 .slider-for {
   margin-bottom: 40px;
+}
+
+.modal-dialog {
+  margin: 0;
+}
+
+.modal-content {
+  border: none;
+}
+
+.es-modal-sticky-nav .es-modal-back {
+  width: auto;
+}
+
+.es-modal-sticky-nav .es-modal-back svg {
+  margin-right: 10px;
 }

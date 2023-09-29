@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MobileNav from "../components/MobileNav";
+import MobileMap from "../components/Modals/MobileMap";
 
 const Layout = ({ children }) => {
   return (
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
       {children}
       <Footer />
       <MobileNav />
+      <MobileMap />
       <Link to={"#top"} id="back-top">
         <svg
           width="20"

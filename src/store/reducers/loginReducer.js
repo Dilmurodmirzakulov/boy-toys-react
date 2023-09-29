@@ -3,8 +3,6 @@ import actionTypes from "../action-types/actionTypes";
 const initialState = {
   loggedIn: false,
   error: null,
-  role: null,
-  roles: [],
   token: "",
 };
 
