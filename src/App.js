@@ -16,6 +16,7 @@ import OrderComplete from "./pages/orderComplete";
 import Profile from "./pages/profile";
 import PublicOffer from "./pages/publicOffer";
 import NotFound from "./pages/404.js";
+import AllProducts from "./pages/allProducts.js";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
           <Route path="order-complete" element={<OrderComplete />} />
           <Route path="profile" element={<Profile />} />
           <Route path="public-offer" element={<PublicOffer />} />
-          <Route path="error" element={<NotFound />} />
+          <Route path="all-products" element={<AllProducts />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </>
