@@ -6,7 +6,10 @@ import globe from "../assets/img/ic_globe.svg";
 import hamburger from "../assets/img/ic_hamburger.svg";
 import { Link } from "react-router-dom";
 import { Badge, Button, Dropdown, Nav } from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { showMenuModal } from "../store/actions/modalsAction";
 const Header = () => {
+  const dispatch = useDispatch();
   return (
     <>
       {" "}
@@ -93,6 +96,7 @@ const Header = () => {
                   className="es-hamburger"
                   data-target="#menuModal"
                   data-toggle="modal"
+                  onClick={() => dispatch(showMenuModal())}
                 >
                   <img alt="Menu" src={hamburger} />
                 </Button>

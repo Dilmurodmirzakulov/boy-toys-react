@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MobileNav from "../components/MobileNav";
 import MobileMap from "../components/Modals/MobileMap";
+import MenuModal from "../components/Modals/MenuModal";
 
 const Layout = ({ children }) => {
   return (
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
       <Footer />
       <MobileNav />
       <MobileMap />
+      <MenuModal />
       <Link to={"#top"} id="back-top">
         <svg
           width="20"

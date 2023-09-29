@@ -11,3 +11,15 @@ export const closeMapModal = () => {
     type: ActionTypes.MODALS.CLOSE_MOBILE_MAP,
   };
 };
+
+export const showMenuModal = () => {
+  return {
+    type: ActionTypes.MODALS.SHOW_MENU_MODAL,
+  };
+};
+
+export const closeMenuModal = () => {
+  return {
+    type: ActionTypes.MODALS.CLOSE_MENU_MODAL,
+  };
+};
