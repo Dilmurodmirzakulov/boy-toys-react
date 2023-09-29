@@ -784,9 +784,11 @@ input[type="radio"]::before {
 }
 
 .es-product-wrapper {
+
   padding: 0.625rem;
   flex: 0 0 25%;
-  max-width: 25%;
+  /* max-width: 25%; */
+  /* width: 25%; */
 }
 
 .es-categroy-pr-list .es-product-wrapper {
@@ -1086,11 +1088,11 @@ input[type="radio"]::before {
 }
 
 .slick-prev {
-  right: 4.5rem;
+  right: 4.5rem !important;
 }
 
 .slick-next {
-  right: 0;
+  right: 0 !important;
 }
 
 .es-partners-slider .slick-arrow {
@@ -3211,6 +3213,10 @@ footer .es-phone a:hover {
 
 
 /* FEEDBACK SECTION */
+.es-feedback-wrapper {
+  padding: 0.625rem;
+}
+
 .es-feedback-slick .es-feedback-wrapper {
   padding: 0.625rem;
   flex: 0 0 33.3%;

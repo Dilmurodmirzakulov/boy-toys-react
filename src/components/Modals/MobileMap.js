@@ -25,9 +25,9 @@ const MobileMap = () => {
         <div class="modal-content">
           <div class="modal-header">
             <div class="es-logo">
-             <Link to={"/"} onClick={hideModal}>
-              <img src={Logo} alt="" />
-             </Link>
+              <Link to={"/"} onClick={hideModal}>
+                <img src={Logo} alt="" />
+              </Link>
             </div>
             <div class="es-mob-nav">
               <Dropdown class="dropdown es-lang-dropdown">
@@ -118,7 +118,11 @@ const MobileMap = () => {
           </div>
           <div class="modal-body p-0">
             <div class="es-modal-sticky-nav">
-              <Link to={"/checkout"} onClick={hideModal} class="btn es-modal-back es-modal-title">
+              <Link
+                to={"/checkout"}
+                onClick={hideModal}
+                class="btn es-modal-back es-modal-title"
+              >
                 <svg
                   width="24"
                   height="24"

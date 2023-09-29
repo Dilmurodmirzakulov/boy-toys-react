@@ -4,13 +4,12 @@ import like from "../assets/img/ic_pr-like.svg";
 
 const ProductItem = () => {
   return (
-    <>
       <div className="es-product-wrapper">
         <div className="es-product-item">
           <div className="es-product-flag">new</div>
           <div className="es-product-img">
             <a href="#">
-              <img src="img/product_1.jpg" className="img-fluid" alt="" />
+              <img src={require("../assets/img/product_1.jpg")} className="img-fluid" alt="" />
               <button className="btn es-product-like">
                 <img src={like} alt="" />
               </button>
@@ -48,7 +47,6 @@ const ProductItem = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 
