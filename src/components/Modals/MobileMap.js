@@ -18,20 +18,23 @@ const MobileMap = () => {
       show={mobileMap}
       onHide={hideModal}
       animation={false}
-      class="modal fade"
+      className="modal fade"
       id="mapModal"
     >
-      <div class="modal-dialog modal-dialog-full">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="es-logo">
+      <div className="modal-dialog modal-dialog-full">
+        <div className="modal-content">
+          <div className="modal-header">
+            <div className="es-logo">
               <Link to={"/"} onClick={hideModal}>
                 <img src={Logo} alt="" />
               </Link>
             </div>
-            <div class="es-mob-nav">
-              <Dropdown class="dropdown es-lang-dropdown">
-                <Dropdown.Toggle class="btn es-language-dropdown" type="button">
+            <div className="es-mob-nav">
+              <Dropdown className="dropdown es-lang-dropdown">
+                <Dropdown.Toggle
+                  className="btn es-language-dropdown"
+                  type="button"
+                >
                   <svg
                     width="20"
                     height="20"
@@ -43,43 +46,47 @@ const MobileMap = () => {
                       d="M9.99999 18.3337C14.6024 18.3337 18.3333 14.6027 18.3333 10.0003C18.3333 5.39795 14.6024 1.66699 9.99999 1.66699C5.39762 1.66699 1.66666 5.39795 1.66666 10.0003C1.66666 14.6027 5.39762 18.3337 9.99999 18.3337Z"
                       stroke="white"
                       strokeLinecap="round"
-                      stroke-linejoin="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M6.66667 2.5H7.5C5.875 7.36667 5.875 12.6333 7.5 17.5H6.66667"
                       stroke="white"
                       strokeLinecap="round"
-                      stroke-linejoin="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M12.5 2.5C14.125 7.36667 14.125 12.6333 12.5 17.5"
                       stroke="white"
                       strokeLinecap="round"
-                      stroke-linejoin="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M2.5 13.3333V12.5C7.36667 14.125 12.6333 14.125 17.5 12.5V13.3333"
                       stroke="white"
                       strokeLinecap="round"
-                      stroke-linejoin="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M2.5 7.5C7.36667 5.875 12.6333 5.875 17.5 7.5"
                       stroke="white"
                       strokeLinecap="round"
-                      stroke-linejoin="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </Dropdown.Toggle>
-                <Dropdown.Menu class="dropdown-menu es-dropdown-menu">
-                  <Dropdown.Item class="dropdown-item active">
+                <Dropdown.Menu className="dropdown-menu es-dropdown-menu">
+                  <Dropdown.Item className="dropdown-item active">
                     Рус
                   </Dropdown.Item>
-                  <Dropdown.Item class="dropdown-item">O'zb</Dropdown.Item>
-                  <Dropdown.Item class="dropdown-item">Eng</Dropdown.Item>
+                  <Dropdown.Item className="dropdown-item">O'zb</Dropdown.Item>
+                  <Dropdown.Item className="dropdown-item">Eng</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              <Link to={"/favorites"} class="es-favorites" onClick={hideModal}>
+              <Link
+                to={"/favorites"}
+                className="es-favorites"
+                onClick={hideModal}
+              >
                 <svg
                   width="24"
                   height="24"
@@ -90,13 +97,13 @@ const MobileMap = () => {
                   <path
                     d="M12.62 20.8096C12.28 20.9296 11.72 20.9296 11.38 20.8096C8.48 19.8196 2 15.6896 2 8.68961C2 5.59961 4.49 3.09961 7.56 3.09961C9.38 3.09961 10.99 3.97961 12 5.33961C13.01 3.97961 14.63 3.09961 16.44 3.09961C19.51 3.09961 22 5.59961 22 8.68961C22 15.6896 15.52 19.8196 12.62 20.8096Z"
                     stroke="white"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     strokeLinecap="round"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </Link>
-              <button class="btn es-hamburger" onClick={hideModal}>
+              <button className="btn es-hamburger" onClick={hideModal}>
                 <svg
                   width="10"
                   height="10"
@@ -116,12 +123,12 @@ const MobileMap = () => {
               </button>
             </div>
           </div>
-          <div class="modal-body p-0">
-            <div class="es-modal-sticky-nav">
+          <div className="modal-body p-0">
+            <div className="es-modal-sticky-nav">
               <Link
                 to={"/checkout"}
                 onClick={hideModal}
-                class="btn es-modal-back es-modal-title"
+                className="btn es-modal-back es-modal-title"
               >
                 <svg
                   width="24"
@@ -133,33 +140,33 @@ const MobileMap = () => {
                   <path
                     d="M12.3203 14.62L9.76031 12.06L12.3203 9.5"
                     stroke="#20AEEA"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
+                    strokeWidth="1.5"
+                    strokeMiterlimit="10"
                     strokeLinecap="round"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M20 12.0596H9.83"
                     stroke="#20AEEA"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
+                    strokeWidth="1.5"
+                    strokeMiterlimit="10"
                     strokeLinecap="round"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M12 4C7.58 4 4 7 4 12C4 17 7.58 20 12 20"
                     stroke="#20AEEA"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
+                    strokeWidth="1.5"
+                    strokeMiterlimit="10"
                     strokeLinecap="round"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
                 Назад
               </Link>
             </div>
-            <div class="es-map-modal"></div>
-            <button class="btn es-curr-location">
+            <div className="es-map-modal"></div>
+            <button className="btn es-curr-location">
               <svg
                 width="20"
                 height="20"

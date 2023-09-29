@@ -24,14 +24,14 @@ const AuthModal = () => {
       show={authModal}
       onHide={hideModal}
       animation={false}
-      class="modal fade es-modal-center"
+      className="modal fade es-modal-center"
       id="authModal"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
+      <div className="modal-dialog modal-dialog-centered">
+        <div className="modal-content">
+          <div className="modal-body">
             <button
-              class="btn close es-hamburger"
+              className="btn close es-hamburger"
               data-dismiss="modal"
               type="button"
               onClick={hideModal}
@@ -53,25 +53,25 @@ const AuthModal = () => {
                 />
               </svg>
             </button>
-            <div class="modal-logo">
+            <div className="modal-logo">
               <img src={require("../../assets/img/logo.png")} alt="" />
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <ReactInputMask
-                class="form-control"
+                className="form-control"
                 mask="+\9\98 (99) 999 99 99"
                 maskChar={null}
                 placeholder="Введите номер телефона"
               />
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 placeholder="Введите код"
               />
             </div>
-            <button class="btn es-btn-dark w-100" onClick={hideAuthModal}>
+            <button className="btn es-btn-dark w-100" onClick={hideAuthModal}>
               Далее
             </button>
           </div>

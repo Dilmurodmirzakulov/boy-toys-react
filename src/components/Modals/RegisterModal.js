@@ -16,15 +16,15 @@ const RegisterModal = () => {
       show={registerModal}
       onHide={hideModal}
       animation={false}
-      class="modal fade es-modal-center"
+      className="modal fade es-modal-center"
       id="authModal"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
+      <div className="modal-dialog modal-dialog-centered">
+        <div className="modal-content">
+          <div className="modal-body">
             <button
               aria-label="Close"
-              class="close"
+              className="close"
               data-dismiss="modal"
               type="button"
               onClick={hideModal}
@@ -46,46 +46,50 @@ const RegisterModal = () => {
                 />
               </svg>
             </button>
-            <div class="modal-logo">
+            <div className="modal-logo">
               <img src={require("../../assets/img/logo.png")} alt="" />
             </div>
-            <div class="form-group">
-              <label class="es-form-label">Выберите пол</label>
-              <div class="es-gender-options">
-                <label class="radio-label">
+            <div className="form-group">
+              <label className="es-form-label">Выберите пол</label>
+              <div className="es-gender-options">
+                <label className="radio-label">
                   <input type="radio" name="gender" value="male" /> Мужской
                 </label>
-                <label class="radio-label">
+                <label className="radio-label">
                   <input type="radio" name="gender" value="female" /> Женский
                 </label>
               </div>
             </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Ваше имя" />
-            </div>
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
+                placeholder="Ваше имя"
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control"
                 placeholder="Дата рождения"
               />
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 data-plugin="phone-mask"
                 placeholder="Ваш номер"
               />
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 placeholder="Введите код"
               />
             </div>
-            <a href="#" class="btn es-btn-dark w-100">
+            <a href="#" className="btn es-btn-dark w-100">
               Далее
             </a>
           </div>

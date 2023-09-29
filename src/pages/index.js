@@ -116,33 +116,41 @@ const Home = () => {
 
   return (
     <main>
-      <section class="carousel-section">
-        <div class="main-carousel">
+      <section className="carousel-section">
+        <div className="main-carousel">
           <div
-            class="carousel slide carousel-fade"
+            className="carousel slide carousel-fade"
             data-ride="carousel"
             id="mainCarousel"
           >
-            <ol class="carousel-indicators">
-              <li data-target="#mainCarousel" data-slide-to="0" class=""></li>
+            <ol className="carousel-indicators">
+              <li
+                data-target="#mainCarousel"
+                data-slide-to="0"
+                className=""
+              ></li>
               <li
                 data-target="#mainCarousel"
                 data-slide-to="1"
-                class="active"
+                className="active"
               ></li>
-              <li data-target="#mainCarousel" data-slide-to="2" class=""></li>
+              <li
+                data-target="#mainCarousel"
+                data-slide-to="2"
+                className=""
+              ></li>
             </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
                 <img
-                  class="img-fluid w-100"
+                  className="img-fluid w-100"
                   src={require("../assets/img/banner1.jpg")}
                   alt="Жизнь слишком коротка"
                 />
-                <div class="carousel-backdrop">
-                  <div class="es-carousel-content container">
-                    <div class="carousel-title">Игрушки для детей</div>
-                    <div class="carousel-info">
+                <div className="carousel-backdrop">
+                  <div className="es-carousel-content container">
+                    <div className="carousel-title">Игрушки для детей</div>
+                    <div className="carousel-info">
                       Игрушки были частью жизни ребенка на протяжении веков,
                       обеспечивая бесконечные часы игры и воображения.
                     </div>
@@ -150,19 +158,19 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* <button class="carousel-control-prev" data-slide="prev" data-target="#mainCarousel" type="button">
+            {/* <button className="carousel-control-prev" data-slide="prev" data-target="#mainCarousel" type="button">
             <span><img src="img/ic_slider-left.svg"></span>
           </button>
-          <button class="carousel-control-next" data-slide="next" data-target="#mainCarousel" type="button">
+          <button className="carousel-control-next" data-slide="next" data-target="#mainCarousel" type="button">
             <span><img src="img/ic_slider-right.svg"></span>
           </button>  */}
           </div>
         </div>
       </section>
-      <section class="products-section">
-        <div class="container">
-          <h2 class="es-section-title">Новинки</h2>
-          <Slider {...settings} class="es-products-slick">
+      <section className="products-section">
+        <div className="container">
+          <h2 className="es-section-title">Новинки</h2>
+          <Slider {...settings} className="es-products-slick">
             <ProductItem />
             <ProductItem />
             <ProductItem />
@@ -172,44 +180,48 @@ const Home = () => {
           </Slider>
         </div>
       </section>
-      <section class="form-section">
-        <div class="es-form-container">
-          <div class="es-section-title">Оставьте заявку</div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="* Имя" />
+      <section className="form-section">
+        <div className="es-form-container">
+          <div className="es-section-title">Оставьте заявку</div>
+          <div className="row">
+            <div className="col-md-6">
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="* Имя"
+                />
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
+            <div className="col-md-6">
+              <div className="form-group">
                 <ReactInputMask
-                  class="form-control"
+                  className="form-control"
                   mask="+\9\98 (99) 999 99 99"
                   maskChar={null}
                   placeholder="Введите номер телефона"
                 />
               </div>
             </div>
-            <div class="col-12">
-              <div class="form-group">
+            <div className="col-12">
+              <div className="form-group">
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   placeholder="* Сообщение"
                   rows="4"
                 ></textarea>
               </div>
             </div>
-            <div class="col-12">
-              <button class="btn es-btn-light w-50">Далее</button>
+            <div className="col-12">
+              <button className="btn es-btn-light w-50">Далее</button>
             </div>
           </div>
         </div>
       </section>
-      <section class="products-slider">
-        <div class="container">
-          <h2 class="es-section-title">Скидки</h2>
-          <Slider {...settings} class="es-products-slick">
+      <section className="products-slider">
+        <div className="container">
+          <h2 className="es-section-title">Скидки</h2>
+          <Slider {...settings} className="es-products-slick">
             <ProductItem />
             <ProductItem />
             <ProductItem />
@@ -219,73 +231,88 @@ const Home = () => {
           </Slider>
         </div>
       </section>
-      <section class="feedback-section">
-        <div class="container">
-          <h2 class="es-section-title">Отзывы наших клиентов</h2>
-          <Slider {...settingsFeedback} class="es-feedback-slick">
-            <div class="es-feedback-wrapper">
-              <div class="es-feedback-item">
-                <div class="es-feedback-ic">
-                  <img src={require("../assets/img/ic_feedback2.png")} alt="feedback" />
+      <section className="feedback-section">
+        <div className="container">
+          <h2 className="es-section-title">Отзывы наших клиентов</h2>
+          <Slider {...settingsFeedback} className="es-feedback-slick">
+            <div className="es-feedback-wrapper">
+              <div className="es-feedback-item">
+                <div className="es-feedback-ic">
+                  <img
+                    src={require("../assets/img/ic_feedback2.png")}
+                    alt="feedback"
+                  />
                 </div>
-                <div class="es-feedback-text">
+                <div className="es-feedback-text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, nulla magni blanditiis culpa, accusantium
                   voluptatum delectus facere assumenda nobis quo distinctio
                 </div>
-                <div class="es-feedbacker">Mark Alvio Wiens</div>
+                <div className="es-feedbacker">Mark Alvio Wiens</div>
               </div>
             </div>
-            <div class="es-feedback-wrapper">
-              <div class="es-feedback-item">
-                <div class="es-feedback-ic">
-                  <img src={require("../assets/img/ic_feedback2.png")} alt="feedback" />
+            <div className="es-feedback-wrapper">
+              <div className="es-feedback-item">
+                <div className="es-feedback-ic">
+                  <img
+                    src={require("../assets/img/ic_feedback2.png")}
+                    alt="feedback"
+                  />
                 </div>
-                <div class="es-feedback-text">
+                <div className="es-feedback-text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, nulla magni blanditiis culpa, accusantium
                   voluptatum delectus facere assumenda nobis quo distinctio
                 </div>
-                <div class="es-feedbacker">Mark Alvio Wiens</div>
+                <div className="es-feedbacker">Mark Alvio Wiens</div>
               </div>
             </div>
-            <div class="es-feedback-wrapper">
-              <div class="es-feedback-item">
-                <div class="es-feedback-ic">
-                  <img src={require("../assets/img/ic_feedback2.png")} alt="feedback" />
+            <div className="es-feedback-wrapper">
+              <div className="es-feedback-item">
+                <div className="es-feedback-ic">
+                  <img
+                    src={require("../assets/img/ic_feedback2.png")}
+                    alt="feedback"
+                  />
                 </div>
-                <div class="es-feedback-text">
+                <div className="es-feedback-text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, nulla magni blanditiis culpa, accusantium
                   voluptatum delectus facere assumenda nobis quo distinctio
                 </div>
-                <div class="es-feedbacker">Mark Alvio Wiens</div>
+                <div className="es-feedbacker">Mark Alvio Wiens</div>
               </div>
             </div>
-            <div class="es-feedback-wrapper">
-              <div class="es-feedback-item">
-                <div class="es-feedback-ic">
-                  <img src={require("../assets/img/ic_feedback2.png")} alt="feedback" />
+            <div className="es-feedback-wrapper">
+              <div className="es-feedback-item">
+                <div className="es-feedback-ic">
+                  <img
+                    src={require("../assets/img/ic_feedback2.png")}
+                    alt="feedback"
+                  />
                 </div>
-                <div class="es-feedback-text">
+                <div className="es-feedback-text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, nulla magni blanditiis culpa, accusantium
                   voluptatum delectus facere assumenda nobis quo distinctio
                 </div>
-                <div class="es-feedbacker">Mark Alvio Wiens</div>
+                <div className="es-feedbacker">Mark Alvio Wiens</div>
               </div>
             </div>
-            <div class="es-feedback-wrapper">
-              <div class="es-feedback-item">
-                <div class="es-feedback-ic">
-                  <img src={require("../assets/img/ic_feedback2.png")} alt="feedback" />
+            <div className="es-feedback-wrapper">
+              <div className="es-feedback-item">
+                <div className="es-feedback-ic">
+                  <img
+                    src={require("../assets/img/ic_feedback2.png")}
+                    alt="feedback"
+                  />
                 </div>
-                <div class="es-feedback-text">
+                <div className="es-feedback-text">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Dignissimos, nulla magni blanditiis culpa, accusantium
                   voluptatum delectus facere assumenda nobis quo distinctio
                 </div>
-                <div class="es-feedbacker">Mark Alvio Wiens</div>
+                <div className="es-feedbacker">Mark Alvio Wiens</div>
               </div>
             </div>
           </Slider>

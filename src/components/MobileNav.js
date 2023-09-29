@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const MobileNav = () => {
   return (
-    <div class="mobile-nav d-lg-none">
-      <ul class="nav">
-        <li class="nav-item">
-          <Link to={"/"} class="nav-link active">
+    <div className="mobile-nav d-lg-none">
+      <ul className="nav">
+        <li className="nav-item">
+          <Link to={"/"} className="nav-link active">
             <svg
               width="22"
               height="22"
@@ -19,11 +19,11 @@ const MobileNav = () => {
                 fill="#253E5E"
               />
             </svg>
-            <span class="menu-title">Главная</span>
+            <span className="menu-title">Главная</span>
           </Link>
         </li>
-        <li class="nav-item">
-          <Link to={"/"} class="nav-link">
+        <li className="nav-item">
+          <Link to={"/"} className="nav-link">
             <svg
               width="22"
               height="22"
@@ -67,11 +67,11 @@ const MobileNav = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span class="menu-title">Меню</span>
+            <span className="menu-title">Меню</span>
           </Link>
         </li>
-        <li class="nav-item">
-          <Link to={"/cart"} class="nav-link">
+        <li className="nav-item">
+          <Link to={"/cart"} className="nav-link">
             <svg
               width="22"
               height="22"
@@ -110,12 +110,12 @@ const MobileNav = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span class="badge badge-cart">1</span>
-            <span class="menu-title">Корзина</span>
+            <span className="badge badge-cart">1</span>
+            <span className="menu-title">Корзина</span>
           </Link>
         </li>
-        <li class="nav-item">
-          <Link to={"/profile"} class="nav-link">
+        <li className="nav-item">
+          <Link to={"/profile"} className="nav-link">
             <svg
               width="22"
               height="22"
@@ -138,7 +138,7 @@ const MobileNav = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span class="menu-title">Профиль</span>
+            <span className="menu-title">Профиль</span>
           </Link>
         </li>
       </ul>

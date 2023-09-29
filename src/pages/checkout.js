@@ -10,23 +10,27 @@ const Checkout = () => {
 
   return (
     <main>
-      <section class="es-page-section">
-        <div class="container">
+      <section className="es-page-section">
+        <div className="container">
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb es-breadcrumb">
-              <li class="breadcrumb-item">
+            <ol className="breadcrumb es-breadcrumb">
+              <li className="breadcrumb-item">
                 <Link to={"/"}>Главная</Link>
               </li>
-              <li class="breadcrumb-item active" aria-current="page">
+              <li className="breadcrumb-item active" aria-current="page">
                 Корзина
               </li>
             </ol>
           </nav>
-          <div class="row">
-            <div class="col-md-6">
-              <h1 class="es-page-title">Оформление заказа</h1>
-              <ul class="nav nav-pills es-tabs" id="pills-tab" role="tablist">
-                <li class="nav-item">
+          <div className="row">
+            <div className="col-md-6">
+              <h1 className="es-page-title">Оформление заказа</h1>
+              <ul
+                className="nav nav-pills es-tabs"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li className="nav-item">
                   <button
                     class={`btn nav-link es-btn-dark ${
                       !!isDelivery && "active"
@@ -37,7 +41,7 @@ const Checkout = () => {
                     Доставка
                   </button>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <button
                     class={`btn nav-link es-btn-dark ${
                       !isDelivery && "active"
@@ -49,34 +53,37 @@ const Checkout = () => {
                   </button>
                 </li>
               </ul>
-              <div class="tab-content" id="pills-tabContent">
+              <div className="tab-content" id="pills-tabContent">
                 {!!isDelivery ? (
-                  <div
-                    class="tab-pane fade show active"
-                    id="delivery"
-                  >
-                    <form id="delivery-form" class="es-form" action="#">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label class="control-label" for="orderform-name">
+                  <div className="tab-pane fade show active" id="delivery">
+                    <form id="delivery-form" className="es-form" action="#">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <label
+                              className="control-label"
+                              for="orderform-name"
+                            >
                               ФИО
                             </label>
                             <input
                               type="text"
                               id="orderform-name"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Введите Имя"
                             />
                           </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label class="control-label" for="orderform-phone">
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <label
+                              className="control-label"
+                              for="orderform-phone"
+                            >
                               Номер
                             </label>
                             <ReactInputMask
-                              class="form-control"
+                              className="form-control"
                               mask="+\9\98 (99) 999 99 99"
                               maskChar={null}
                               placeholder="Введите номер телефона"
@@ -84,79 +91,81 @@ const Checkout = () => {
                           </div>
                         </div>
                       </div>
-                      <p class="control-label">
-                        <span class="es-text-blue">*</span> Найдите место на
+                      <p className="control-label">
+                        <span className="es-text-blue">*</span> Найдите место на
                         карте и кликайте на него!
                       </p>
-                      <div
-                        class="form-group"
-                      >
+                      <div className="form-group">
                         <iframe
-                          class="es-map"
+                          className="es-map"
                           scrolling="no"
-                          marginheight="0"
-                          marginwidth="0"
+                          marginHeight="0"
+                          marginWidth="0"
                           src="https://maps.google.com/maps?width=100%25&amp;height=700&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                           width="100%"
                           height="450"
-                          frameborder="0"
+                          frameBorder="0"
                         >
-                          <Link to={"https://www.maps.ie/distance-area-calculator.html"}>
+                          <Link
+                            to={
+                              "https://www.maps.ie/distance-area-calculator.html"
+                            }
+                          >
                             measure acres/hectares on map
                           </Link>
                         </iframe>
                         <button
-                          class="btn es-map-btn d-md-none"
+                          className="btn es-map-btn d-md-none"
                           onClick={() => dispatch(showMapModal())}
                         >
                           Указать на карте
                         </button>
                       </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label class="control-label" for="address">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <label className="control-label" for="address">
                               Адрес
                             </label>
                             <input
                               type="text"
                               id="address"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Введите адрес доставки"
                             />
                           </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label class="control-label" for="orderform-point">
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <label
+                              className="control-label"
+                              for="orderform-point"
+                            >
                               Ориентир
                             </label>
                             <input
                               type="text"
                               id="orderform-point"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Введите ориентир"
                             />
                           </div>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label">
+                      <div className="form-group">
+                        <label className="control-label">
                           Выберите способ оплаты
                         </label>
-                        <div class="form-group">
-                          <input
-                            type="hidden"
-                            value=""
-                          />
+                        <div className="form-group">
+                          <input type="hidden" value="" />
                           <div
                             id="orderform-payment"
-                            class="es-pv-checklist"
+                            className="es-pv-checklist"
                             role="radiogroup"
                           >
-                            <div class="row">
-                              <div class="col-6">
-                                <label class="radio-label">
+                            <div className="row">
+                              <div className="col-6">
+                                <label className="radio-label">
                                   <input
                                     type="radio"
                                     name="OrderForm[payment]"
@@ -164,7 +173,7 @@ const Checkout = () => {
                                   />
                                   Наличные
                                 </label>
-                                <label class="radio-label">
+                                <label className="radio-label">
                                   <input
                                     type="radio"
                                     name="OrderForm[payment]"
@@ -173,8 +182,8 @@ const Checkout = () => {
                                   Payme
                                 </label>
                               </div>
-                              <div class="col-6">
-                                <label class="radio-label">
+                              <div className="col-6">
+                                <label className="radio-label">
                                   <input
                                     type="radio"
                                     name="OrderForm[payment]"
@@ -182,7 +191,7 @@ const Checkout = () => {
                                   />
                                   Click
                                 </label>
-                                <label class="radio-label">
+                                <label className="radio-label">
                                   <input
                                     type="radio"
                                     name="OrderForm[payment]"
@@ -195,13 +204,16 @@ const Checkout = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label" for="orderform-comment">
+                      <div className="form-group">
+                        <label
+                          className="control-label"
+                          for="orderform-comment"
+                        >
                           Комментарий
                         </label>
                         <textarea
                           id="orderform-comment"
-                          class="form-control"
+                          className="form-control"
                           rows="6"
                           placeholder="Комментарий к заказу"
                         ></textarea>
@@ -209,33 +221,36 @@ const Checkout = () => {
                     </form>
                   </div>
                 ) : (
-                  <div
-                    class="tab-pane fade show active"
-                    id="pickup"
-                  >
-                    <form id="pickup-form" class="es-form" action="#">
+                  <div className="tab-pane fade show active" id="pickup">
+                    <form id="pickup-form" className="es-form" action="#">
                       <input type="hidden" />
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label class="control-label" for="orderform-name">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <label
+                              className="control-label"
+                              for="orderform-name"
+                            >
                               ФИО
                             </label>
                             <input
                               type="text"
                               id="orderform-name"
-                              class="form-control"
+                              className="form-control"
                               placeholder="Введите Имя"
                             />
                           </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label class="control-label" for="orderform-phone">
+                        <div className="col-md-6">
+                          <div className="form-group">
+                            <label
+                              className="control-label"
+                              for="orderform-phone"
+                            >
                               Номер
                             </label>
                             <ReactInputMask
-                              class="form-control"
+                              className="form-control"
                               mask="+\9\98 (99) 999 99 99"
                               maskChar={null}
                               placeholder="Введите номер телефона"
@@ -243,27 +258,27 @@ const Checkout = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="es-form-order">
-                        <label class="control-label">Выберите филиал</label>
+                      <div className="es-form-order">
+                        <label className="control-label">Выберите филиал</label>
                       </div>
-                      <div class="form-group">
-                        <div class="es-radio-list">
-                          <div class="form-group">
+                      <div className="form-group">
+                        <div className="es-radio-list">
+                          <div className="form-group">
                             <div
                               id="orderform-branch"
-                              class="es-pv-checklist"
+                              className="es-pv-checklist"
                               role="radiogroup"
                             >
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <label class="radio-label">
+                              <div className="row">
+                                <div className="col-md-6">
+                                  <label className="radio-label">
                                     <input
                                       type="radio"
                                       name="OrderForm[branch]"
                                     />
                                     Наманган, ул И.Каримова 1
                                   </label>
-                                  <label class="radio-label">
+                                  <label className="radio-label">
                                     <input
                                       type="radio"
                                       name="OrderForm[branch]"
@@ -271,15 +286,15 @@ const Checkout = () => {
                                     Андижан, ул. Амир Темур шох 8
                                   </label>
                                 </div>
-                                <div class="col-md-6">
-                                  <label class="radio-label">
+                                <div className="col-md-6">
+                                  <label className="radio-label">
                                     <input
                                       type="radio"
                                       name="OrderForm[branch]"
                                     />
                                     Ургенч, ул. Амударья д 62
                                   </label>
-                                  <label class="radio-label">
+                                  <label className="radio-label">
                                     <input
                                       type="radio"
                                       name="OrderForm[branch]"
@@ -293,12 +308,12 @@ const Checkout = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label">
+                      <div className="form-group">
+                        <label className="control-label">
                           Выберите способ оплаты
                         </label>
-                        <div class="es-radio-list">
-                          <div class="form-group">
+                        <div className="es-radio-list">
+                          <div className="form-group">
                             <input
                               type="hidden"
                               name="OrderForm[payment]"
@@ -306,13 +321,13 @@ const Checkout = () => {
                             />
                             <div
                               id="orderform-payment"
-                              class="es-pv-checklist"
+                              className="es-pv-checklist"
                               role="radiogroup"
                               aria-required="true"
                             >
-                              <div class="row">
-                                <div class="col-6">
-                                  <label class="radio-label">
+                              <div className="row">
+                                <div className="col-6">
+                                  <label className="radio-label">
                                     <input
                                       type="radio"
                                       name="OrderForm[payment]"
@@ -320,7 +335,7 @@ const Checkout = () => {
                                     />
                                     Наличные
                                   </label>
-                                  <label class="radio-label">
+                                  <label className="radio-label">
                                     <input
                                       type="radio"
                                       name="OrderForm[payment]"
@@ -329,8 +344,8 @@ const Checkout = () => {
                                     Payme
                                   </label>
                                 </div>
-                                <div class="col-6">
-                                  <label class="radio-label">
+                                <div className="col-6">
+                                  <label className="radio-label">
                                     <input
                                       type="radio"
                                       name="OrderForm[payment]"
@@ -338,7 +353,7 @@ const Checkout = () => {
                                     />
                                     Click
                                   </label>
-                                  <label class="radio-label">
+                                  <label className="radio-label">
                                     <input
                                       type="radio"
                                       name="OrderForm[payment]"
@@ -352,13 +367,16 @@ const Checkout = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label" for="orderform-comment">
+                      <div className="form-group">
+                        <label
+                          className="control-label"
+                          for="orderform-comment"
+                        >
                           Комментарий
                         </label>
                         <textarea
                           id="orderform-comment"
-                          class="form-control"
+                          className="form-control"
                           rows="6"
                           placeholder="Комментарий к заказу"
                         ></textarea>
@@ -368,61 +386,64 @@ const Checkout = () => {
                 )}
               </div>
             </div>
-            <div class="col-md-6 sm-px-0">
-              <div class="es-checkout-items">
-                <h4 class="es-tab-title mt-2">Ваш заказ:</h4>
-                <div class="es-checkout-list">
-                  <div class="es-checkout-item">
-                    <div class="es-checkout-img">
+            <div className="col-md-6 sm-px-0">
+              <div className="es-checkout-items">
+                <h4 className="es-tab-title mt-2">Ваш заказ:</h4>
+                <div className="es-checkout-list">
+                  <div className="es-checkout-item">
+                    <div className="es-checkout-img">
                       <img
                         src={require("../assets/img/product_1.jpg")}
-                        class="img-fluid"
+                        className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <div class="es-checkout-detail">
-                      <div class="es-cp-title">
+                    <div className="es-checkout-detail">
+                      <div className="es-cp-title">
                         Название товара, в одну строку
                       </div>
-                      <div class="es-product-calc">
+                      <div className="es-product-calc">
                         1 x 56 000 сум = 56 000 сум{" "}
                       </div>
                     </div>
                   </div>
-                  <div class="es-checkout-item">
-                    <div class="es-checkout-img">
+                  <div className="es-checkout-item">
+                    <div className="es-checkout-img">
                       <img
                         src={require("../assets/img/product_1.jpg")}
-                        class="img-fluid"
+                        className="img-fluid"
                         alt=""
                       />
                     </div>
-                    <div class="es-checkout-detail">
-                      <div class="es-cp-title">
+                    <div className="es-checkout-detail">
+                      <div className="es-cp-title">
                         Название товара, которое не помещается в одну строку.
                         Название товара, которое не помещается в одну строку
                       </div>
-                      <div class="es-product-calc">
+                      <div className="es-product-calc">
                         1 x 56 000 сум = 56 000 сум{" "}
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="es-checkout-footer">
-                  <div id="deliveryPriceRow" class="es-checkout-row">
-                    <div class="es-cf-title">Доставка:</div>
-                    <div id="delivery-price" class="es-cf-value">
+                <div className="es-checkout-footer">
+                  <div id="deliveryPriceRow" className="es-checkout-row">
+                    <div className="es-cf-title">Доставка:</div>
+                    <div id="delivery-price" className="es-cf-value">
                       <span>0</span> сум
                     </div>
-                    <div id="delivery-price-free" class="es-cf-value d-none">
+                    <div
+                      id="delivery-price-free"
+                      className="es-cf-value d-none"
+                    >
                       Бесплатная доставка{" "}
                     </div>
                   </div>
-                  <div class="es-checkout-row">
-                    <div class="es-cf-title">Сумма заказа:</div>
+                  <div className="es-checkout-row">
+                    <div className="es-cf-title">Сумма заказа:</div>
                     <div
                       id="order-total"
-                      class="es-cf-title"
+                      className="es-cf-title"
                       data-price="63000"
                     >
                       <span>63 000</span> сум
@@ -430,7 +451,7 @@ const Checkout = () => {
                   </div>
                   <button
                     type="submit"
-                    class="btn es-btn-dark w-100"
+                    className="btn es-btn-dark w-100"
                     name="confirm"
                     value="delivery"
                   >
@@ -440,8 +461,8 @@ const Checkout = () => {
               </div>
             </div>
           </div>
-          <div class="es-cf-left">
-            <Link to={"/cart"} class="es-back-link">
+          <div className="es-cf-left">
+            <Link to={"/cart"} className="es-back-link">
               <svg
                 width="24"
                 height="24"
@@ -452,26 +473,26 @@ const Checkout = () => {
                 <path
                   d="M12.3203 14.62L9.76031 12.06L12.3203 9.5"
                   stroke="#20AEEA"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                   strokeLinecap="round"
-                  stroke-linejoin="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M20 12.0596H9.83"
                   stroke="#20AEEA"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                   strokeLinecap="round"
-                  stroke-linejoin="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M12 4C7.58 4 4 7 4 12C4 17 7.58 20 12 20"
                   stroke="#20AEEA"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                   strokeLinecap="round"
-                  stroke-linejoin="round"
+                  strokeLinejoin="round"
                 />
               </svg>{" "}
               Вернуться к покупкам

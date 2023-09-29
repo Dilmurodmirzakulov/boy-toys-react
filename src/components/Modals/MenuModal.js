@@ -17,19 +17,19 @@ const MenuModal = () => {
       show={menuModal}
       onHide={hideModal}
       animation={false}
-      class="modal fade"
+      className="modal fade"
       id="menuModal"
     >
-      <div class="modal-dialog modal-dialog-full">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="es-logo">
+      <div className="modal-dialog modal-dialog-full">
+        <div className="modal-content">
+          <div className="modal-header">
+            <div className="es-logo">
               <img src={require("../../assets/img/logo.png")} alt="" />
             </div>
-            <div class="es-mob-nav">
-              <Dropdown class="dropdown es-lang-dropdown">
+            <div className="es-mob-nav">
+              <Dropdown className="dropdown es-lang-dropdown">
                 <Dropdown.Toggle
-                  class="btn dropdown-toggle es-language-dropdown"
+                  className="btn dropdown-toggle es-language-dropdown"
                   type="button"
                   id="languageDropdown"
                   data-toggle="dropdown"
@@ -76,17 +76,21 @@ const MenuModal = () => {
                   </svg>
                 </Dropdown.Toggle>
                 <Dropdown.Menu
-                  class="dropdown-menu es-dropdown-menu"
+                  className="dropdown-menu es-dropdown-menu"
                   aria-labelledby="languageDropdown"
                 >
-                  <Dropdown.Item class="dropdown-item active">
+                  <Dropdown.Item className="dropdown-item active">
                     Рус
                   </Dropdown.Item>
-                  <Dropdown.Item class="dropdown-item">O'zb</Dropdown.Item>
-                  <Dropdown.Item class="dropdown-item">Eng</Dropdown.Item>
+                  <Dropdown.Item className="dropdown-item">O'zb</Dropdown.Item>
+                  <Dropdown.Item className="dropdown-item">Eng</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              <Link class="es-favorites" to={"/favorites"} onClick={hideModal}>
+              <Link
+                className="es-favorites"
+                to={"/favorites"}
+                onClick={hideModal}
+              >
                 <svg
                   width="24"
                   height="24"
@@ -103,7 +107,7 @@ const MenuModal = () => {
                   />
                 </svg>
               </Link>
-              <button class="btn es-hamburger" onClick={hideModal}>
+              <button className="btn es-hamburger" onClick={hideModal}>
                 <svg
                   width="10"
                   height="10"
@@ -123,13 +127,17 @@ const MenuModal = () => {
               </button>
             </div>
           </div>
-          <div class="modal-body">
-            <Link to={"/"} class="btn es-btn-active w-100" onClick={hideModal}>
+          <div className="modal-body">
+            <Link
+              to={"/"}
+              className="btn es-btn-active w-100"
+              onClick={hideModal}
+            >
               На главную
             </Link>
-            <ul class="nav es-mob-cat-list">
-              <li class="nav-item">
-                <Link to={"/"} class="nav-link" onClick={hideModal}>
+            <ul className="nav es-mob-cat-list">
+              <li className="nav-item">
+                <Link to={"/"} className="nav-link" onClick={hideModal}>
                   <span>Меню</span>
                   <svg
                     width="10"
@@ -149,8 +157,8 @@ const MenuModal = () => {
                   </svg>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to={"/contacts"} class="nav-link" onClick={hideModal}>
+              <li className="nav-item">
+                <Link to={"/contacts"} className="nav-link" onClick={hideModal}>
                   <span>Контакты</span>
                   <svg
                     width="10"
@@ -170,8 +178,8 @@ const MenuModal = () => {
                   </svg>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to={"/about"} class="nav-link" onClick={hideModal}>
+              <li className="nav-item">
+                <Link to={"/about"} className="nav-link" onClick={hideModal}>
                   <span>О нас</span>
                   <svg
                     width="10"
@@ -191,8 +199,12 @@ const MenuModal = () => {
                   </svg>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to={"/public-offer"} class="nav-link" onClick={hideModal}>
+              <li className="nav-item">
+                <Link
+                  to={"/public-offer"}
+                  className="nav-link"
+                  onClick={hideModal}
+                >
                   <span>Публичная офетра</span>
                   <svg
                     width="10"
@@ -213,16 +225,16 @@ const MenuModal = () => {
                 </Link>
               </li>
             </ul>
-            <div class="es-modal-contact">
-              <div class="es-phone-label">Телефон</div>
-              <div class="es-phone">
+            <div className="es-modal-contact">
+              <div className="es-phone-label">Телефон</div>
+              <div className="es-phone">
                 <Link to={"tel:+998 78 150 33 80"} onClick={hideModal}>
-                  +998 78 <span class="es-text-blue">150 33 80</span>
+                  +998 78 <span className="es-text-blue">150 33 80</span>
                 </Link>
               </div>
             </div>
-            <div class="es-footer-info">
-              <div class="es-footer-ic">
+            <div className="es-footer-info">
+              <div className="es-footer-ic">
                 <svg
                   width="20"
                   height="20"
@@ -240,8 +252,8 @@ const MenuModal = () => {
                 Адрес: ул. Богибустон, 248, <br /> Tashkent 100121
               </div>
             </div>
-            <div class="es-footer-socials">
-              <Link to={"/"} class="es-footer-ic" onClick={hideModal}>
+            <div className="es-footer-socials">
+              <Link to={"/"} className="es-footer-ic" onClick={hideModal}>
                 <svg
                   width="20"
                   height="20"
@@ -255,7 +267,7 @@ const MenuModal = () => {
                   />
                 </svg>
               </Link>
-              <Link to={"/"} class="es-footer-ic" onClick={hideModal}>
+              <Link to={"/"} className="es-footer-ic" onClick={hideModal}>
                 <svg
                   width="20"
                   height="20"
@@ -269,7 +281,7 @@ const MenuModal = () => {
                   />
                 </svg>
               </Link>
-              <Link to={"/"} class="es-footer-ic" onClick={hideModal}>
+              <Link to={"/"} className="es-footer-ic" onClick={hideModal}>
                 <svg
                   width="20"
                   height="20"

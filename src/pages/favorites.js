@@ -6,24 +6,24 @@ import backIcon from "../assets/img/ic_back_link.svg";
 const Favorites = () => {
   return (
     <>
-      <div class="es-page-section">
-        <div class="container">
+      <div className="es-page-section">
+        <div className="container">
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb es-breadcrumb">
-              <li class="breadcrumb-item">
+            <ol className="breadcrumb es-breadcrumb">
+              <li className="breadcrumb-item">
                 <Link to={"/"}>Главная</Link>
               </li>
-              <li class="breadcrumb-item active" aria-current="page">
+              <li className="breadcrumb-item active" aria-current="page">
                 Корзина
               </li>
             </ol>
           </nav>
-          <h1 class="es-page-title">Избранное</h1>
-          <div class="es-products-list es-favorites-list">
+          <h1 className="es-page-title">Избранное</h1>
+          <div className="es-products-list es-favorites-list">
             <ProductItem />
           </div>
-          <div class="es-cf-left">
-            <a href="#" class="es-back-link">
+          <div className="es-cf-left">
+            <a href="#" className="es-back-link">
               <img src={backIcon} alt="" /> Вернуться к покупкам
             </a>
           </div>

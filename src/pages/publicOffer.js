@@ -5,24 +5,24 @@ const PublicOffer = () => {
   return (
     <div>
       {" "}
-      <div class="container">
+      <div className="container">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb es-breadcrumb">
-            <li class="breadcrumb-item">
+          <ol className="breadcrumb es-breadcrumb">
+            <li className="breadcrumb-item">
               <Link to={"/"}>Главная</Link>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">
+            <li className="breadcrumb-item active" aria-current="page">
               Заказ принят
             </li>
           </ol>
         </nav>
       </div>
-      <section class="es-page-section">
-        <div class="container">
-          <div class="es-public-offer">
-            <h1 class="es-page-title">Публичная офетра</h1>
-            <div class="es-group-title">1. Определения терминов</div>
-            <p class="es-public-offer-text">
+      <section className="es-page-section">
+        <div className="container">
+          <div className="es-public-offer">
+            <h1 className="es-page-title">Публичная офетра</h1>
+            <div className="es-group-title">1. Определения терминов</div>
+            <p className="es-public-offer-text">
               1. Перечисленные ниже термины имеют для целей настоящего
               Соглашения следующее значение: 1.1. Интернет-магазин «название
               интернет-магазина» – сайт, расположенный на доменном имени
@@ -53,8 +53,8 @@ const PublicOffer = () => {
               (звонков), в том числе информационного сопровождения и оформления
               заказов клиентов по голосовым каналам связи.
             </p>
-            <div class="es-group-title">2. Общие положения</div>
-            <p class="es-public-offer-text">
+            <div className="es-group-title">2. Общие положения</div>
+            <p className="es-public-offer-text">
               2.1. Настоящее пользовательское соглашение (далее — Соглашение)
               относится к сайту Интернет-магазина «название интернет-магазина»,
               расположенному по адресу: адрес интернет-магазина, и ко всем
@@ -82,8 +82,8 @@ const PublicOffer = () => {
               и сервисов сайта регулируется нормами действующего
               законодательства Республики Узбекистан.
             </p>
-            <div class="es-group-title">3. Предмет соглашения</div>
-            <p class="es-public-offer-text">
+            <div className="es-group-title">3. Предмет соглашения</div>
+            <p className="es-public-offer-text">
               3.1. Предметом настоящего Соглашения является предоставление
               возможности Пользователю приобретать для личных, семейных,
               домашних и иных нужд, не связанных с осуществлением
