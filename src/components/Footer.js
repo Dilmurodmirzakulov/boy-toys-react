@@ -106,7 +106,7 @@ function Footer() {
             </div>
           </Col>
           <Col md={6} lg={4} className="es-footer-group">
-            <ul className="nav flex-column " style={{ alignItems: "center" }}>
+            <ul className="nav flex-column ">
               <li className="nav-item">
                 <a href="#" className="nav-link">
                   Меню
@@ -136,10 +136,7 @@ function Footer() {
                 +998 78 <span className="es-text-blue">150 33 80</span>
               </a>
             </div>
-            <div
-              className="es-footer-info"
-              style={{ justifyContent: "flex-end" }}
-            >
+            <div className="es-footer-info" style={{ justifyContent: "end" }}>
               <div>
                 Адрес: ул. Богибустон, 248, <br /> Tashkent 100121
               </div>
