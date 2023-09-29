@@ -20,7 +20,12 @@ const About = () => {
             </div>
           </div>
           <div className="es-full-right-half">
-            <img src={about} className="img-fluid" loading="lazy" />
+            <img
+              src={about}
+              className="img-fluid"
+              loading="lazy"
+              alt="Nimadir"
+            />
           </div>
         </div>
       </section>
