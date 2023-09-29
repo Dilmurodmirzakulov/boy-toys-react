@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
-import { closeRegisterModal } from "../../store/actions/modalsAction";
 import { useDispatch, useSelector } from "react-redux";
+import { closeRegisterModal } from "../../store/actions/modalsAction";
 
 const RegisterModal = () => {
   const { registerModal } = useSelector((state) => state.modalsReducer);
@@ -10,6 +10,7 @@ const RegisterModal = () => {
   const hideModal = () => {
     dispatch(closeRegisterModal());
   };
+
   return (
     <Modal
       show={registerModal}

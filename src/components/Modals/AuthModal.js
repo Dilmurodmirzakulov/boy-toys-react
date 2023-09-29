@@ -18,7 +18,7 @@ const AuthModal = () => {
   const hideAuthModal = () => {
     dispatch(closeAuthModal());
     dispatch(showRegisterModal());
-  }
+  };
   return (
     <Modal
       show={authModal}
@@ -31,7 +31,7 @@ const AuthModal = () => {
         <div class="modal-content">
           <div class="modal-body">
             <button
-              class="close"
+              class="btn close es-hamburger"
               data-dismiss="modal"
               type="button"
               onClick={hideModal}
@@ -71,10 +71,7 @@ const AuthModal = () => {
                 placeholder="Введите код"
               />
             </div>
-            <button
-              class="btn es-btn-dark w-100"
-              onClick={hideAuthModal}
-            >
+            <button class="btn es-btn-dark w-100" onClick={hideAuthModal}>
               Далее
             </button>
           </div>
