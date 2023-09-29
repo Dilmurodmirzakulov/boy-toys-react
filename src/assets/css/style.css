@@ -1685,7 +1685,7 @@ footer .es-phone a:hover {
   margin: 0;
 }
 
-.es-action-block img {
+.es-action-block svg {
   margin-right: 0.5rem;
 }
 
@@ -3373,4 +3373,8 @@ footer .es-phone a:hover {
 
 .es-modal-sticky-nav .es-modal-back svg {
   margin-right: 10px;
+}
+
+.navbar-expand-lg {
+  justify-content: flex-end;
 }
