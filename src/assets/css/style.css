@@ -3220,7 +3220,7 @@ footer .es-phone a:hover {
 .es-feedback-slick .es-feedback-wrapper {
   padding: 0.625rem;
   flex: 0 0 33.3%;
-  max-width: 33.3%;
+  /* max-width: 33.3%; */
 }
 
 .es-feedback-item {
