@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Badge, Button, Dropdown, Nav } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { showMenuModal } from "../store/actions/modalsAction";
+import { showAuthModal } from "../store/actions/modalsAction";
 const Header = () => {
   const dispatch = useDispatch();
   return (
@@ -69,6 +70,7 @@ const Header = () => {
                           href="#"
                           data-toggle="modal"
                           data-target="#authModal"
+                          onClick={() => dispatch(showAuthModal())}
                         >
                           <img src={profile} alt="" />
                         </Nav.Link>

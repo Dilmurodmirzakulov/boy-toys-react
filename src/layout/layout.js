@@ -5,6 +5,8 @@ import Footer from "../components/Footer";
 import MobileNav from "../components/MobileNav";
 import MobileMap from "../components/Modals/MobileMap";
 import MenuModal from "../components/Modals/MenuModal";
+import AuthModal from "../components/Modals/AuthModal";
+import RegisterModal from "../components/Modals/RegisterModal";
 
 const Layout = ({ children }) => {
   return (
@@ -15,6 +17,8 @@ const Layout = ({ children }) => {
       <MobileNav />
       <MobileMap />
       <MenuModal />
+      <AuthModal />
+      <RegisterModal />
       <Link to={"#top"} id="back-top">
         <svg
           width="20"

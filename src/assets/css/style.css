@@ -3384,3 +3384,12 @@ footer .es-phone a:hover {
 .navbar-expand-lg {
   justify-content: flex-end;
 }
+
+#authModal {
+  margin: 1.75rem auto !important;
+  max-width: 500px;
+}
+
+#authModal .modal-body {
+  padding: 4rem 3rem;
+}

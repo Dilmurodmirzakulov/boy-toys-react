@@ -23,3 +23,27 @@ export const closeMenuModal = () => {
     type: ActionTypes.MODALS.CLOSE_MENU_MODAL,
   };
 };
+
+export const showAuthModal = () => {
+  return {
+    type: ActionTypes.MODALS.SHOW_AUTH_MODAL,
+  };
+};
+
+export const closeAuthModal = () => {
+  return {
+    type: ActionTypes.MODALS.CLOSE_AUTH_MODAL,
+  };
+};
+
+export const showRegisterModal = () => {
+  return {
+    type: ActionTypes.MODALS.SHOW_REGISTER_MODAL,
+  };
+};
+
+export const closeRegisterModal = () => {
+  return {
+    type: ActionTypes.MODALS.CLOSE_REGISTER_MODAL,
+  };
+};
