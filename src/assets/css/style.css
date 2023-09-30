@@ -1,6 +1,6 @@
 :root {
-  --main-color:#7C81AD;
-  --active-color: #4B527E;
+  --main-color: #7c81ad;
+  --active-color: #4b527e;
   --border-color: #e1e1e1;
   --text-grey: #898989;
 }
@@ -784,7 +784,6 @@ input[type="radio"]::before {
 }
 
 .es-product-wrapper {
-
   padding: 0.625rem;
   flex: 0 0 25%;
   /* max-width: 25%; */
@@ -1425,7 +1424,6 @@ footer .es-phone a:hover {
 /* ========================================================== */
 /* Prodcuct view */
 /* ========================================================== */
-
 
 .es-pv-content {
   padding-left: 2rem;
@@ -3184,7 +3182,6 @@ footer .es-phone a:hover {
   height: auto;
 }
 
-
 /* FORM SECTION */
 .form-section,
 .feedback-section {
@@ -3210,8 +3207,6 @@ footer .es-phone a:hover {
   margin-bottom: 2rem;
 }
 
-
-
 /* FEEDBACK SECTION */
 .es-feedback-wrapper {
   padding: 0.625rem;
@@ -3224,7 +3219,7 @@ footer .es-phone a:hover {
 }
 
 .es-feedback-item {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px;
   border: 1px solid var(--border-color);
   padding: 1.25rem;
@@ -3273,20 +3268,20 @@ footer .es-phone a:hover {
 }
 
 .es-form-container .es-btn-light {
-  background-color: #FFA1F5;
+  background-color: #ffa1f5;
   margin: auto;
   color: #ffffff;
 }
 
 .es-form-container .es-btn-light:hover {
   background-color: #ffffff;
-  border: 1px solid #FFA1F5;
-  color: #FFA1F5;
+  border: 1px solid #ffa1f5;
+  color: #ffa1f5;
 }
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #FFA1F5;
+  border-color: #ffa1f5;
 }
 
 .es-footer-desc {
@@ -3307,7 +3302,7 @@ footer .es-phone a:hover {
   justify-content: start;
 }
 
-.es-comp-main-content .ec-breadcrumb a,  
+.es-comp-main-content .ec-breadcrumb a,
 .ec-breadcrumb .breadcrumb-item.active {
   color: var(--active-color);
 }
@@ -3325,7 +3320,8 @@ footer .es-phone a:hover {
   margin-right: 1.25rem;
 }
 
-.slider-nav .slick-arrow, .slider-nav .slick-dots {
+.slider-nav .slick-arrow,
+.slider-nav .slick-dots {
   display: none !important;
 }
 
@@ -3392,4 +3388,8 @@ footer .es-phone a:hover {
 
 #authModal .modal-body {
   padding: 2rem;
+}
+
+.es-feedback-wrapper {
+  max-width: unset !important;
 }
