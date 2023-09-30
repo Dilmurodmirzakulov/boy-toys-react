@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import ProductItem from "../components/Product.js";
 import svgIcon from "../assets/img/ic_back_link.svg";
