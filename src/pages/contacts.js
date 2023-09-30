@@ -34,7 +34,7 @@ const Contacts = () => {
             </div>
           </div>
           <div className="es-full-right-half">
-            <img src={contact} className="img-fluid" loading="lazy" />
+            <img src={contact} className="img-fluid" loading="lazy" alt="" />
           </div>
         </div>
       </section>

@@ -87,6 +87,7 @@ import instagram from "../assets/img/ic_instagram.svg";
 
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 // import logo from "./path/to/your/logo.png"; // Logo rasmini kerakli manzilga o'zgartiring
 // import locationLogo from "./path/to/your/locationLogo.png"; // Location logo rasmini kerakli manzilga o'zgartiring
 // import facebook from "./path/to/your/facebook.png"; // Facebook rasmini kerakli manzilga o'zgartiring
@@ -108,24 +109,35 @@ function Footer() {
           <Col md={6} lg={4} className="es-footer-group">
             <ul className="nav flex-column ">
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                {/* <a href="#" className="nav-link">
                   Меню
-                </a>
+                </a> */}
+                <Link to={"/"} className="nav-link">
+                  Меню
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                {/* <a href="#" className="nav-link">
                   Контакты
-                </a>
+                </a> */}
+                <Link to={"/contacts"} className="nav-link">
+                  Контакты
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                {/* <a href="#" className="nav-link"> */}
+                <Link to={"/about"} className="nav-link">
                   О нас
-                </a>
+                </Link>
+                {/* </a> */}
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                {/* <a href="#" className="nav-link">
                   Публичная офетра
-                </a>
+                </a> */}
+                <Link to={"/public-offer"} className="nav-link">
+                  Публичная офетра
+                </Link>
               </li>
             </ul>
           </Col>

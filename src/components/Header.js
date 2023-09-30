@@ -67,7 +67,7 @@ const Header = () => {
                     <li className="nav-item">
                       <Nav.Item>
                         <Nav.Link
-                          href="#"
+                          to
                           data-toggle="modal"
                           data-target="#authModal"
                           onClick={() => dispatch(showAuthModal())}
