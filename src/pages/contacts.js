@@ -1,10 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import contact from "../assets/img/contact.jpg";
-import facebookDark from "../assets/img/ic_facebook-dark.svg";
+import contactMan from "../assets/img/contact-man.png";
 import linkedin from "../assets/img/ic_linkedin-dark.svg";
 import instagram from "../assets/img/ic_instagram-dark.svg";
-import contactMan from "../assets/img/contact-man.png";
-import { Link } from "react-router-dom";
+import facebookDark from "../assets/img/ic_facebook-dark.svg";
 const Contacts = () => {
   return (
     <>
@@ -52,15 +52,18 @@ const Contacts = () => {
                 </div>
                 <div className="es-contact">
                   <div className="es-contact-prop">Телефон</div>
-                  <a href="tel:+998 78 150 33 80" className="es-contact-number">
+                  <Link
+                    to={"tel:+998 78 150 33 80"}
+                    className="es-contact-number"
+                  >
                     +998 78 150 33 80
-                  </a>
+                  </Link>
                 </div>
                 <div className="es-contact">
                   <div className="es-contact-prop">Телефон доставки</div>
-                  <a href="tel:+998 90 825 26 10" className="es-contact-number">
+                  <Link to={"tel:+998 90 825 26 10"} className="es-contact-number">
                     +998 90 825 26 10
-                  </a>
+                  </Link>
                 </div>
                 <div className="es-contact">
                   <div className="es-contact-prop">Часы работы</div>
@@ -69,15 +72,15 @@ const Contacts = () => {
                   </div>
                 </div>
                 <div className="es-footer-socials">
-                  <a href="" className="es-footer-ic">
-                    <img src={facebookDark} />
-                  </a>
-                  <a className="es-footer-ic" href="">
-                    <img src={linkedin} />
-                  </a>
-                  <a className="es-footer-ic" href="">
-                    <img src={instagram} />
-                  </a>
+                  <Link to={"/"} className="es-footer-ic">
+                    <img src={facebookDark} alt='' />
+                  </Link>
+                  <Link to={"/"} className="es-footer-ic">
+                    <img src={linkedin} alt='' />
+                  </Link>
+                  <Link to={"/"} className="es-footer-ic">
+                    <img src={instagram} alt='' />
+                  </Link>
                 </div>
               </div>
               <img className="img-fluid sm-hide" src={contactMan} alt="" />
@@ -96,9 +99,9 @@ const Contacts = () => {
                   frameBorder="0"
                   title="Map"
                 >
-                  <a href="https://www.maps.ie/distance-area-calculator.html">
+                  <Link to={"https://www.maps.ie/distance-area-calculator.html"}>
                     measure distance on map
-                  </a>
+                  </Link>
                 </iframe>
               </div>
             </div>

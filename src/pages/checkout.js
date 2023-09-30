@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import ReactInputMask from "react-input-mask";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import ReactInputMask from "react-input-mask";
 import { showMapModal } from "../store/actions/modalsAction";
 
 const Checkout = () => {

@@ -1,7 +1,11 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { showAuthModal } from "../store/actions/modalsAction";
 
 const MobileNav = () => {
+  const dispatch = useDispatch();
+
   return (
     <div className="mobile-nav d-lg-none">
       <ul className="nav">
@@ -23,7 +27,7 @@ const MobileNav = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={"/"} className="nav-link">
+          <Link to={"/all-products"} className="nav-link">
             <svg
               width="22"
               height="22"
@@ -115,7 +119,7 @@ const MobileNav = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={"/profile"} className="nav-link">
+          <Link to={"/profile"} className="nav-link" onClick={() => dispatch(showAuthModal())}>
             <svg
               width="22"
               height="22"

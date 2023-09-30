@@ -1,6 +1,6 @@
 import React from "react";
-import ReactInputMask from "react-input-mask";
 import Slider from "react-slick";
+import ReactInputMask from "react-input-mask";
 import ProductItem from "../components/Product";
 
 const Home = () => {
@@ -199,7 +199,7 @@ const Home = () => {
                   className="form-control"
                   mask="+\9\98 (99) 999 99 99"
                   maskChar={null}
-                  placeholder="Введите номер телефона"
+                  placeholder="* Введите номер телефона"
                 />
               </div>
             </div>

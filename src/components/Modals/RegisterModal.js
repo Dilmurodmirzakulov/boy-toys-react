@@ -89,9 +89,9 @@ const RegisterModal = () => {
                 placeholder="Введите код"
               />
             </div>
-            <a href="#" className="btn es-btn-dark w-100">
+            <button className="btn es-btn-dark w-100">
               Далее
-            </a>
+            </button>
           </div>
         </div>
       </div>

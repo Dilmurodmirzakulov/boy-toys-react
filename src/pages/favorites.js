@@ -1,6 +1,6 @@
 import React from "react";
-import ProductItem from "../components/Product.js";
 import { Link } from "react-router-dom";
+import ProductItem from "../components/Product.js";
 import backIcon from "../assets/img/ic_back_link.svg";
 
 const Favorites = () => {
@@ -23,9 +23,9 @@ const Favorites = () => {
             <ProductItem />
           </div>
           <div className="es-cf-left">
-            <a href="#" className="es-back-link">
+            <Link to={"/all-products"} className="es-back-link">
               <img src={backIcon} alt="" /> Вернуться к покупкам
-            </a>
+            </Link>
           </div>
         </div>
       </div>

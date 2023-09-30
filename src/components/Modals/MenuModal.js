@@ -137,7 +137,7 @@ const MenuModal = () => {
             </Link>
             <ul className="nav es-mob-cat-list">
               <li className="nav-item">
-                <Link to={"/"} className="nav-link" onClick={hideModal}>
+                <Link to={"/all-products"} className="nav-link" onClick={hideModal}>
                   <span>Меню</span>
                   <svg
                     width="10"
@@ -228,7 +228,7 @@ const MenuModal = () => {
             <div className="es-modal-contact">
               <div className="es-phone-label">Телефон</div>
               <div className="es-phone">
-                <Link to={"tel:+998 78 150 33 80"} onClick={hideModal}>
+                <Link to={"tel:+998781503380"} onClick={hideModal}>
                   +998 78 <span className="es-text-blue">150 33 80</span>
                 </Link>
               </div>

@@ -113,6 +113,10 @@
   .products-section {
     padding: 3.125rem 0;
   }
+  .products-slider .es-section-title,
+  .products-section .es-section-title {
+    text-align: left;
+  }
   .es-section-title {
     font-size: 2rem;
     margin-bottom: 1.875rem;
@@ -158,9 +162,6 @@
   }
   .slick-prev {
     right: 3.5rem !important;
-  }
-  .products-slider .es-section-title {
-    text-align: left;
   }
   .es-footer-container {
     padding: 3.125rem 0;
@@ -1077,5 +1078,11 @@
 
   .feedback-section .slick-arrow {
     display: none;
+  }
+  #authModal {
+    margin: 0 !important;
+  }
+  .mobile-nav .nav-link svg {
+    margin: 0 auto;
   }
 }

@@ -27,9 +27,9 @@ const AllProducts = () => {
             <ProductItem />
           </div>
           <div className="es-cf-left">
-            <a href="#" className="es-back-link">
+            <Link to={"/cart"} className="es-back-link">
               <img src={svgIcon} alt="" /> Вернуться к покупкам
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -24,7 +24,7 @@ const About = () => {
               src={about}
               className="img-fluid"
               loading="lazy"
-              alt="Nimadir"
+              alt=""
             />
           </div>
         </div>

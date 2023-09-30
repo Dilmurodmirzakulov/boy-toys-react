@@ -1,110 +1,130 @@
 import React from "react";
-import logo from "../assets/img/logo.png";
-import heart from "../assets/img/ic_heart.svg";
 import cart from "../assets/img/ic_cart.svg";
-import profile from "../assets/img/ic_profile.svg";
+import heart from "../assets/img/ic_heart.svg";
 import globe from "../assets/img/ic_globe.svg";
+import profile from "../assets/img/ic_profile.svg";
 import hamburger from "../assets/img/ic_hamburger.svg";
 import { Link } from "react-router-dom";
-import { Badge, Button, Dropdown, Nav } from "react-bootstrap";
 import { useDispatch } from "react-redux";
+import { Dropdown, DropdownToggle } from "react-bootstrap";
 import { showMenuModal } from "../store/actions/modalsAction";
 import { showAuthModal } from "../store/actions/modalsAction";
 const Header = () => {
   const dispatch = useDispatch();
-  return (
-    <header className="main-header fixed-top">
-      <Nav className="es-navbar">
-        <div className="container">
-          <div className="es-header">
-            <div className="es-header-left sm-hide">
-              <nav className="navbar-nav">
-                {/* <a href="#" className="es-btn-light">
-                    На главную
-                  </a> */}
 
-                <Link to="/" className="es-btn-light">
+  return (
+    <header class="main-header fixed-top">
+      <nav class="es-navbar">
+        <div class="container">
+          <div class="es-header">
+            <div class="es-header-left sm-hide">
+              <nav class="navbar-nav">
+                <Link to={"/"} class="es-btn-light">
                   На главную
                 </Link>
               </nav>
             </div>
-            <div className="es-header-center">
-              <Link to="/" className="navbar-brand es-logo">
-                <img src={logo} alt="" />
+            <div class="es-header-center">
+              <Link to={"/"} class="navbar-brand es-logo">
+                <img src={require("../assets/img/logo.png")} alt="" />
               </Link>
             </div>
-            <div className="es-header-right">
-              <Nav className="navbar-expand-lg">
-                <ul className="navbar-nav navbar-icons sm-hide">
-                  <li className="nav-item dropdown ml-auto">
-                    <Dropdown as={Nav.Item} alignright>
-                      <Dropdown.Toggle variant="light" id="languageDropdown">
+            <div class="es-header-right">
+              <nav class="navbar-expand-lg">
+                <ul class="navbar-nav navbar-icons sm-hide">
+                  <Dropdown class="nav-item dropdown ml-auto">
+                    <DropdownToggle
+                      class="btn dropdown-toggle es-language-dropdown"
+                      type="button"
+                      id="languageDropdown"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Рус
+                    </DropdownToggle>
+                    <Dropdown.Menu
+                      class="dropdown-menu"
+                      aria-labelledby="languageDropdown"
+                    >
+                      <Dropdown.Item class="dropdown-item active" href="#">
                         Рус
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Dropdown.Item active>Рус</Dropdown.Item>
-                        <Dropdown.Item>O'zb</Dropdown.Item>
-                        <Dropdown.Item>Eng</Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
+                      </Dropdown.Item>
+                      <Dropdown.Item class="dropdown-item" href="#">
+                        O'zb
+                      </Dropdown.Item>
+                      <Dropdown.Item class="dropdown-item" href="#">
+                        Eng
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <li class="nav-item">
+                    <Link to={"/favorites"} class="nav-link">
+                      <img src={heart} alt="" />
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <Nav.Item>
-                      <Nav.Link href="#">
-                        <img src={heart} alt="" />
-                      </Nav.Link>
-                    </Nav.Item>
+                  <li class="nav-item position-relative">
+                    <Link to={"/cart"} class="nav-link">
+                      <img src={cart} alt="" />
+                      <span class="badge badge-cart">1</span>
+                    </Link>
                   </li>
-                  <li className="nav-item position-relative">
-                    <Nav.Item>
-                      <Nav.Link href="#">
-                        <img src={cart} alt="" />
-                        <Badge className="badge-cart">1</Badge>
-                      </Nav.Link>
-                    </Nav.Item>
-                  </li>
-                  <li className="nav-item">
-                    <Nav.Item>
-                      <Nav.Link
-                        href="#"
-                        data-toggle="modal"
-                        data-target="#authModal"
-                        onClick={() => dispatch(showAuthModal())}
-                      >
-                        <img src={profile} alt="" />
-                      </Nav.Link>
-                    </Nav.Item>
+                  <li class="nav-item">
+                    <Link
+                      to={"/profile"}
+                      class="nav-link"
+                      data-toggle="modal"
+                      data-target="#authModal"
+                      onClick={() => dispatch(showAuthModal())}
+                    >
+                      <img src={profile} alt="" />
+                    </Link>
                   </li>
                 </ul>
-              </Nav>
+              </nav>
             </div>
-            <div className="es-mob-nav">
-              <Dropdown as="div" className="es-lang-dropdown">
-                <Dropdown.Toggle variant="light" id="languageDropdown">
+            <div class="es-mob-nav">
+              <Dropdown class="dropdown es-lang-dropdown">
+                <Dropdown.Toggle
+                  class="btn dropdown-toggle es-language-dropdown"
+                  type="button"
+                  id="languageDropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   <img src={globe} alt="" />
                 </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item active>Рус</Dropdown.Item>
-                  <Dropdown.Item>O'zb</Dropdown.Item>
-                  <Dropdown.Item>Eng</Dropdown.Item>
+                <Dropdown.Menu
+                  class="dropdown-menu es-dropdown-menu"
+                  aria-labelledby="languageDropdown"
+                >
+                  <Dropdown.Item class="dropdown-item active" href="#">
+                    Рус
+                  </Dropdown.Item>
+                  <Dropdown.Item class="dropdown-item" href="#">
+                    O'zb
+                  </Dropdown.Item>
+                  <Dropdown.Item class="dropdown-item" href="#">
+                    Eng
+                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              <a className="es-favorites" href="#">
+              <Link to={"/favorites"} class="es-favorites">
                 <img alt="" src={heart} />
-              </a>
-              <Button
-                variant="light"
-                className="es-hamburger"
+              </Link>
+              <button
+                class="btn es-hamburger"
                 data-target="#menuModal"
                 data-toggle="modal"
                 onClick={() => dispatch(showMenuModal())}
               >
                 <img alt="Menu" src={hamburger} />
-              </Button>
+              </button>
             </div>
           </div>
         </div>
-      </Nav>
+      </nav>
     </header>
   );
 };

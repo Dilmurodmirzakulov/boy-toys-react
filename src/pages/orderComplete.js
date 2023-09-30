@@ -29,7 +29,6 @@ const OrderComplete = () => {
             </div>
             <div className="col-6">
               <Link to={"/"}>
-                {" "}
                 <button className="btn es-order-btn w-100">На главную</button>
               </Link>
             </div>
