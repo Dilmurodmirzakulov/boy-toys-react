@@ -1085,4 +1085,7 @@
   .mobile-nav .nav-link svg {
     margin: 0 auto;
   }
+  .es-cf-left {
+    margin-top: 15px;
+  }
 }
